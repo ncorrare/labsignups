@@ -1,0 +1,6 @@
+---
+users:
+- dummy: 
+    fullname: dummy
+    password: dummy
+    email: dummy@dummy.com
