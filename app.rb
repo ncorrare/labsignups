@@ -2,7 +2,6 @@ require 'sinatra'
 require 'fileutils'
 require 'tempfile'
 require 'net/http'
-require 'json'
 require 'yaml'
 
 get '/' do
