@@ -15,7 +15,11 @@ get '/participants/:username' do
 	username = params['username']
 	user = data.fetch("users").select {|s| s.include? username}
 	fullname = user[0].fetch(username).fetch("fullname")
-	"#{fullname}"
+	email = user[0].fetch(username).fetch("email")
+	password = user[0].fetch(username).fetch("password")
+	"Name: #{fullname}\n <br />
+	Email: #{email}\n <br />
+	Password: #{password} <br />"
 end
 post '/participant' do
 	#Create an Azure VM, console user, node group, blah. If succesfull, redirect to get '/participants/:username'
