@@ -4,3 +4,4 @@ users:
     fullname: dummy
     password: dummy
     email: dummy@dummy.com
+    username: dummy
